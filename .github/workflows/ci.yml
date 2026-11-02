@@ -1,0 +1,23 @@
+name: Verificar Eureka Server
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-java@b843ebf9b913146b38da2eaa7aeddf76074ae1ad
+        with:
+          distribution: temurin
+          java-version: '25'
+          cache: maven
+      - name: Probar registro, heartbeat, baja y dashboard
+        run: ./mvnw --batch-mode --no-transfer-progress verify
+      - name: Verificar imagen
+        run: docker build -t logitrack-eureka-server:ci .
