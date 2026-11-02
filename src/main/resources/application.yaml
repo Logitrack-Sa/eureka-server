@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: eureka-server
+  profiles:
+    default: dev
+management:
+  endpoints.web.exposure.include: health
+  endpoint.health.show-details: never
