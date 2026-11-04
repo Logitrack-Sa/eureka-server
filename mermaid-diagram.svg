@@ -1,0 +1,268 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1653.13275 1907.6000000000001" width="1653.13275" height="1907.6000000000001" style="--bg:#1F1F1F;--fg:#CCCCCC;--line:#CCCCCC;--accent:#0078D4;--muted:#CCCCCCCC;--surface:#181818;--border:#CCCCCC;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<g class="subgraph" data-id="Clients" data-label="Clientes Externos">
+  <rect x="778.0866666666666" y="40" width="572.939" height="96.9" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="778.0866666666666" y="40" width="572.939" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="790.0866666666666" y="54" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Clientes Externos</text>
+</g>
+<g class="subgraph" data-id="InfraCluster" data-label="Infraestructura y Soporte Spring Cloud">
+  <rect x="642.3841" y="1511.9" width="439.1885" height="355.70000000000005" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="642.3841" y="1511.9" width="439.1885" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="654.3841" y="1525.9" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Infraestructura y Soporte Spring Cloud</text>
+</g>
+<g class="subgraph" data-id="Perimeter" data-label="Capa Perimetral (Ingress)">
+  <rect x="779.6419166666666" y="265.20000000000005" width="312.5519999999999" height="181.4" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="779.6419166666666" y="265.20000000000005" width="312.5519999999999" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="791.6419166666666" y="279.20000000000005" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Capa Perimetral (Ingress)</text>
+</g>
+<g class="subgraph" data-id="DockerNet" data-label="Red Docker Interna: logitrack_network (Bridge)">
+  <rect x="236.31000000000012" y="574.9000000000001" width="1205.5227499999999" height="796.7" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="236.31000000000012" y="574.9000000000001" width="1205.5227499999999" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="248.31000000000012" y="588.9000000000001" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Red Docker Interna: logitrack_network (Bridge)</text>
+<g class="subgraph" data-id="SecMS" data-label="security-service (:8083)">
+  <rect x="252.31000000000012" y="883.9000000000001" width="291.06299999999993" height="130.7" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="252.31000000000012" y="883.9000000000001" width="291.06299999999993" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="264.3100000000001" y="897.9000000000001" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">security-service (:8083)</text>
+</g>
+<g class="subgraph" data-id="CourierMS" data-label="courier-service (:8082)">
+  <rect x="1129.29475" y="883.9000000000001" width="272.53799999999995" height="130.7" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="1129.29475" y="883.9000000000001" width="272.53799999999995" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="1141.29475" y="897.9000000000001" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">courier-service (:8082)</text>
+</g>
+<g class="subgraph" data-id="ShipmentMS" data-label="shipment-service (:8081)">
+  <rect x="842.6269166666666" y="624.9000000000001" width="186.582" height="130.7" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="842.6269166666666" y="624.9000000000001" width="186.582" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="854.6269166666666" y="638.9000000000001" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">shipment-service (:8081)</text>
+</g>
+<g class="subgraph" data-id="StorageLayer" data-label="Capa de Persistencia Relacional">
+  <rect x="564.373" y="1142.9" width="645.8734999999999" height="212.70000000000002" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="564.373" y="1142.9" width="645.8734999999999" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="576.373" y="1156.9" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Capa de Persistencia Relacional</text>
+</g>
+</g>
+<polyline class="edge" data-from="WebClient" data-to="Gateway" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Peticiones HTTP con CORS" points="1157.6996666666666,128.45 1157.6996666666664,178.9 1086.2819166666666,178.9 1086.2819166666666,247.20000000000002 1006.0559166666665,247.20000000000002 1006.0559166666665,309.2" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="MobileClient" data-to="Gateway" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Peticiones HTTP REST" points="873.2301666666666,128.45 873.2301666666666,178.9 944.6479166666666,178.9 944.6479166666666,247.20000000000002 935.9179166666665,247.20000000000002 935.9179166666665,309.2" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Gateway" data-to="ConfigServer" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="1. Bootstrap de configuración" points="1029.4352499999998,430.6 1029.4352499999998,476.6 1541.83275,476.6 1541.83275,1493.9 1011.1665,1493.9 1011.1665,1579.9" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Gateway" data-to="EurekaServer" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="2. Heartbeat y resolución de rutas" points="842.4005833333332,430.6 842.4005833333332,464.6 202.06133333333332,464.6 202.06133333333332,1449.6000000000001 125.25,1449.6000000000001 125.25,1493.9 696.7105,1493.9 696.7104999999999,1579.9" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="SecurityApp" data-to="EurekaServer" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="Registro y Heartbeat" points="333.0757500000001,998.6000000000001 333.0757500000001,1437.6000000000001 337.97420833333337,1437.6000000000001 337.97420833333337,1481.9 735.0369,1481.9 735.0368999999998,1579.9" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="CourierApp" data-to="EurekaServer" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="Registro y Heartbeat" points="1205.42925,998.6000000000001 1205.4292500000001,1032.6000000000001 1220.2465,1032.6000000000001 1220.2465,1413.6000000000001 1041.1255416666668,1413.6000000000001 1041.1255416666668,1457.9 811.6897,1457.9 811.6897000000001,1579.9" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ShipmentApp" data-to="EurekaServer" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="Registro y Heartbeat" points="889.5433166666666,739.6000000000001 889.5433166666667,773.6000000000001 553.373,773.6000000000001 553.373,1413.6000000000001 638.2107083333333,1413.6000000000001 638.2107083333333,1457.9 773.3633,1457.9 773.3633,1579.9" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="SecurityApp" data-to="ConfigServer" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="Carga configuración" points="397.8415000000001,998.6000000000001 397.8415000000001,1425.6000000000001 456.35220833333335,1425.6000000000001 456.35220833333335,1469.9 763.3633,1469.9 763.3632999999999,1567.9 911.3036999999999,1567.9 911.3036999999999,1579.9" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="CourierApp" data-to="ConfigServer" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="Carga configuración" points="1325.69825,998.6000000000001 1325.69825,1425.6000000000001 1170.3856666666666,1425.6000000000001 1170.3856666666666,1469.9 944.5913,1469.9 944.5913,1579.9" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ShipmentApp" data-to="ConfigServer" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="Carga configuración" points="982.2925166666666,739.6000000000001 982.2925166666665,773.6000000000001 1411.83275,773.6000000000001 1411.83275,1437.6000000000001 1288.8576666666665,1437.6000000000001 1288.8576666666665,1481.9 977.8788999999999,1481.9 977.8788999999999,1579.9" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Gateway" data-to="SecurityApp" data-style="thick" data-arrow-start="false" data-arrow-end="true" data-label="lb://SECURITY-SERVICE" points="889.1592499999999,430.6 889.1592499999999,476.6 462.7180416666666,476.6 462.7180416666666,556.9000000000001 441.0186666666667,556.9000000000001 441.01866666666683,927.9000000000001" fill="none" stroke="var(--_line)" stroke-width="2" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Gateway" data-to="CourierApp" data-style="thick" data-arrow-start="false" data-arrow-end="true" data-label="lb://COURIER-SERVICE" points="982.6765833333332,430.6 982.6765833333332,488.6 1292.0736666666667,488.6 1292.0736666666667,556.9000000000001 1424.83275,556.9000000000001 1424.83275,841.9000000000001 1305.6534166666665,841.9000000000001 1305.6534166666665,927.9000000000001" fill="none" stroke="var(--_line)" stroke-width="2" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Gateway" data-to="ShipmentApp" data-style="thick" data-arrow-start="false" data-arrow-end="true" data-label="lb://SHIPMENT-SERVICE" points="935.9179166666665,430.6 935.9179166666665,488.6 835.1136249999998,488.6 835.1136249999998,556.9000000000001 935.9179166666665,556.9000000000001 935.9179166666665,668.9000000000001" fill="none" stroke="var(--_line)" stroke-width="2" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ShipmentApp" data-to="CourierApp" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="OpenFeign: GET /api/v1/internal/couriers/{id}/status" points="715.0661166666664,164.7 715.0661166666664,210.70000000000005 989.164083333333,210.70000000000005 989.1640833333331,353.00000000000006" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="SecurityApp" data-to="SecDB" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="JDBC" points="226.29724999999996,423.7 226.29724999999996,457.70000000000005 241.11449999999982,457.70000000000005 241.11449999999982,526 729.4824999999998,526 729.4824999999998,660.9000000000001 684.3071666666665,660.9000000000001 684.3071666666665,696.9000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="CourierApp" data-to="CourierDB" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="JDBC" points="1029.2537499999999,423.7 1029.2537499999999,526 896.5291666666665,526 896.5291666666666,696.9000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ShipmentApp" data-to="ShipmentDB" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="JDBC" points="684.1497166666664,164.7 684.1497166666664,210.70000000000005 395.2344999999998,210.70000000000005 395.23449999999985,660.9 405.4703333333332,660.9 405.4703333333332,696.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="CertsVolume" data-to="Gateway" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="public.pem (Verificación perimetral)" points="476.55362499999995,159.35000000000002 476.55362499999995,178.9 702.0252499999998,178.9 702.0252499999998,247.20000000000002 865.7799166666666,247.20000000000002 865.7799166666666,309.2" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="CertsVolume" data-to="SecurityApp" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="private.pem (Firma de tokens)" points="416.3812916666666,159.35000000000002 416.3812916666666,452.59999999999997 113.5,452.59999999999997 113.5,556.9000000000001 354.6643333333334,556.9000000000001 354.66433333333345,927.9000000000001" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ConfigServer" data-to="ConfigRepo" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="Lee propiedades" points="961.2351,1633.7 961.2350999999999,1750" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="MySQLCont" data-to="SecDB" data-style="solid" data-arrow-start="false" data-arrow-end="false" points="814.0345,1223.8000000000002 814.0345,1247.8000000000002 889.9135,1247.8000000000002 889.9135,1271.8000000000002" fill="none" stroke="var(--_line)" stroke-width="1" />
+<polyline class="edge" data-from="MySQLCont" data-to="CourierDB" data-style="solid" data-arrow-start="false" data-arrow-end="false" points="814.0345,1223.8000000000002 814.0345,1247.8000000000002 1102.1354999999999,1247.8000000000002 1102.1354999999999,1271.8000000000002" fill="none" stroke="var(--_line)" stroke-width="1" />
+<polyline class="edge" data-from="MySQLCont" data-to="ShipmentDB" data-style="solid" data-arrow-start="false" data-arrow-end="false" points="814.0345,1223.8000000000002 814.0345,1247.8000000000002 672.484,1247.8000000000002 672.484,1271.8000000000002" fill="none" stroke="var(--_line)" stroke-width="1" />
+<g class="edge-label" data-from="WebClient" data-to="Gateway" data-label="Peticiones HTTP con CORS">
+  <rect x="1012.2819166666666" y="185.9" width="147.736" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1086.1499166666665" y="201.05" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Peticiones HTTP con CORS</text>
+</g>
+<g class="edge-label" data-from="MobileClient" data-to="Gateway" data-label="Peticiones HTTP REST">
+  <rect x="880.1479166666666" y="185.9" width="128.13400000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="944.2149166666666" y="201.05" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Peticiones HTTP REST</text>
+</g>
+<g class="edge-label" data-from="Gateway" data-to="ConfigServer" data-label="1. Bootstrap de configuración">
+  <rect x="1465.83275" y="1456.6000000000001" width="151.30000000000004" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1541.4827500000001" y="1471.7500000000002" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">1. Bootstrap de configuración</text>
+</g>
+<g class="edge-label" data-from="Gateway" data-to="EurekaServer" data-label="2. Heartbeat y resolución de rutas">
+  <rect x="37.25" y="1456.6000000000001" width="175.06000000000006" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="124.78000000000003" y="1471.7500000000002" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">2. Heartbeat y resolución de rutas</text>
+</g>
+<g class="edge-label" data-from="SecurityApp" data-to="EurekaServer" data-label="Registro y Heartbeat">
+  <rect x="280.97420833333337" y="1444.6000000000001" width="113.878" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="337.9132083333334" y="1459.7500000000002" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Registro y Heartbeat</text>
+</g>
+<g class="edge-label" data-from="CourierApp" data-to="EurekaServer" data-label="Registro y Heartbeat">
+  <rect x="984.1255416666669" y="1420.6000000000001" width="113.878" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1041.0645416666669" y="1435.7500000000002" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Registro y Heartbeat</text>
+</g>
+<g class="edge-label" data-from="ShipmentApp" data-to="EurekaServer" data-label="Registro y Heartbeat">
+  <rect x="581.2107083333333" y="1420.6000000000001" width="113.878" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="638.1497083333333" y="1435.7500000000002" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Registro y Heartbeat</text>
+</g>
+<g class="edge-label" data-from="SecurityApp" data-to="ConfigServer" data-label="Carga configuración">
+  <rect x="398.85220833333335" y="1432.6000000000001" width="114.47200000000004" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="456.08820833333334" y="1447.7500000000002" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Carga configuración</text>
+</g>
+<g class="edge-label" data-from="CourierApp" data-to="ConfigServer" data-label="Carga configuración">
+  <rect x="1112.8856666666666" y="1432.6000000000001" width="114.47200000000004" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1170.1216666666667" y="1447.7500000000002" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Carga configuración</text>
+</g>
+<g class="edge-label" data-from="ShipmentApp" data-to="ConfigServer" data-label="Carga configuración">
+  <rect x="1231.3576666666665" y="1444.6000000000001" width="114.47200000000004" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1288.5936666666666" y="1459.7500000000002" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Carga configuración</text>
+</g>
+<g class="edge-label" data-from="Gateway" data-to="SecurityApp" data-label="lb://SECURITY-SERVICE">
+  <rect x="395.2180416666665" y="495.6" width="134.668" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="462.5520416666665" y="510.75" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">lb://SECURITY-SERVICE</text>
+</g>
+<g class="edge-label" data-from="Gateway" data-to="CourierApp" data-label="lb://COURIER-SERVICE">
+  <rect x="1228.0736666666667" y="495.6" width="127.53999999999996" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1291.8436666666666" y="510.75" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">lb://COURIER-SERVICE</text>
+</g>
+<g class="edge-label" data-from="Gateway" data-to="ShipmentApp" data-label="lb://SHIPMENT-SERVICE">
+  <rect x="766.6136249999998" y="495.6" width="136.45" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="834.8386249999999" y="510.75" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">lb://SHIPMENT-SERVICE</text>
+</g>
+<g class="edge-label" data-from="ShipmentApp" data-to="CourierApp" data-label="OpenFeign: GET /api/v1/internal/couriers/{id}/status">
+  <rect x="860.1640833333331" y="229.7000000000001" width="257.626" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="988.9770833333331" y="244.8500000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">OpenFeign: GET /api/v1/internal/couriers/{id}/status</text>
+</g>
+<g class="edge-label" data-from="SecurityApp" data-to="SecDB" data-label="JDBC">
+  <rect x="217.6144999999998" y="488.7000000000001" width="46.162" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="240.69549999999978" y="503.8500000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">JDBC</text>
+</g>
+<g class="edge-label" data-from="CourierApp" data-to="CourierDB" data-label="JDBC">
+  <rect x="1005.75375" y="488.7000000000001" width="46.162" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1028.83475" y="503.8500000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">JDBC</text>
+</g>
+<g class="edge-label" data-from="ShipmentApp" data-to="ShipmentDB" data-label="JDBC">
+  <rect x="371.7344999999998" y="359.2000000000001" width="46.162" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="394.8154999999998" y="374.3500000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">JDBC</text>
+</g>
+<g class="edge-label" data-from="CertsVolume" data-to="Gateway" data-label="public.pem (Verificación perimetral)">
+  <rect x="611.0252499999998" y="185.9" width="181.594" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="701.8222499999998" y="201.05" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">public.pem (Verificación perimetral)</text>
+</g>
+<g class="edge-label" data-from="CertsVolume" data-to="SecurityApp" data-label="private.pem (Firma de tokens)">
+  <rect x="36" y="519.6" width="154.864" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="113.432" y="534.75" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">private.pem (Firma de tokens)</text>
+</g>
+<g class="edge-label" data-from="ConfigServer" data-to="ConfigRepo" data-label="Lee propiedades">
+  <rect x="911.2351" y="1676.7" width="99.028" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="960.7491" y="1691.8500000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Lee propiedades</text>
+</g>
+<g class="node" data-id="CertsVolume" data-label="Secretos / Certificados
+public.pem / private.pem" data-shape="cylinder">
+  <rect x="356.20895833333327" y="98.55" width="180.517" height="53.80000000000001" fill="var(--_node-fill)" stroke="none" />
+  <line x1="356.20895833333327" y1="98.55" x2="356.20895833333327" y2="152.35000000000002" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="536.7259583333332" y1="98.55" x2="536.7259583333332" y2="152.35000000000002" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="446.4674583333333" cy="152.35000000000002" rx="90.2585" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="446.4674583333333" cy="98.55" rx="90.2585" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="446.4674583333333" y="125.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="446.4674583333333" dy="-3.9000000000000012">Secretos / Certificados</tspan><tspan x="446.4674583333333" dy="16.900000000000002">public.pem / private.pem</tspan></text>
+</g>
+<g class="node" data-id="WebClient" data-label="Frontend Web (React :3000 / Vite :5173 / Angular :4200)" data-shape="rectangle">
+  <rect x="980.3736666666666" y="91.55" width="354.65199999999993" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1157.6996666666666" y="110" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Frontend Web (React :3000 / Vite :5173 / Angular :4200)</text>
+</g>
+<g class="node" data-id="MobileClient" data-label="App Móvil / Postman" data-shape="rectangle">
+  <rect x="794.0866666666666" y="91.55" width="158.287" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="873.2301666666666" y="110" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">App Móvil / Postman</text>
+</g>
+<g class="node" data-id="ConfigServer" data-label="Config Server (:8888)
+Spring Cloud Config" data-shape="rectangle">
+  <rect x="878.0160999999999" y="1579.9" width="166.43800000000005" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="961.2351" y="1606.8000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="961.2351" dy="-3.9000000000000012">Config Server (:8888)</tspan><tspan x="961.2351" dy="16.900000000000002">Spring Cloud Config</tspan></text>
+</g>
+<g class="node" data-id="ConfigRepo" data-label="Git config-repo
+api-gateway.properties
+shipment-service.properties
+courier-service.properties" data-shape="cylinder">
+  <rect x="856.8976" y="1757" width="208.67499999999998" height="87.60000000000001" fill="var(--_node-fill)" stroke="none" />
+  <line x1="856.8976" y1="1757" x2="856.8976" y2="1844.6" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="1065.5726" y1="1757" x2="1065.5726" y2="1844.6" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="961.2351" cy="1844.6" rx="104.33749999999999" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="961.2351" cy="1757" rx="104.33749999999999" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="961.2351" y="1800.8" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="961.2351" dy="-20.8">Git config-repo</tspan><tspan x="961.2351" dy="16.900000000000002">api-gateway.properties</tspan><tspan x="961.2351" dy="16.900000000000002">shipment-service.properties</tspan><tspan x="961.2351" dy="16.900000000000002">courier-service.properties</tspan></text>
+</g>
+<g class="node" data-id="EurekaServer" data-label="Eureka Server (:8065)
+Netflix Service Discovery" data-shape="rectangle">
+  <rect x="658.3841" y="1579.9" width="191.63199999999995" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="754.2001" y="1606.8000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="754.2001" dy="-3.9000000000000012">Eureka Server (:8065)</tspan><tspan x="754.2001" dy="16.900000000000002">Netflix Service Discovery</tspan></text>
+</g>
+<g class="node" data-id="Gateway" data-label="LogiTrack API Gateway (:8080)
+Spring Cloud Gateway (WebFlux / Netty)
+- CorsWebFilter (Preflights OPTIONS)
+- JwtSecurityGlobalFilter (RS256 / RBAC)
+- DedupeResponseHeader
+- Spring Cloud LoadBalancer" data-shape="rectangle">
+  <rect x="795.6419166666666" y="309.20000000000005" width="280.5519999999999" height="121.4" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="935.9179166666665" y="369.90000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="935.9179166666665" dy="-37.70000000000001">LogiTrack API Gateway (:8080)</tspan><tspan x="935.9179166666665" dy="16.900000000000002">Spring Cloud Gateway (WebFlux / Netty)</tspan><tspan x="935.9179166666665" dy="16.900000000000002">- CorsWebFilter (Preflights OPTIONS)</tspan><tspan x="935.9179166666665" dy="16.900000000000002">- JwtSecurityGlobalFilter (RS256 / RBAC)</tspan><tspan x="935.9179166666665" dy="16.900000000000002">- DedupeResponseHeader</tspan><tspan x="935.9179166666665" dy="16.900000000000002">- Spring Cloud LoadBalancer</tspan></text>
+</g>
+<g class="node" data-id="SecurityApp" data-label="Spring Boot 3.5
+Spring Security / AuthController
+Emisor JWT (RS256 con private.pem)" data-shape="rectangle">
+  <rect x="268.3100000000001" y="927.9000000000001" width="259.06299999999993" height="70.7" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="397.8415000000001" y="963.2500000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="397.8415000000001" dy="-12.350000000000001">Spring Boot 3.5</tspan><tspan x="397.8415000000001" dy="16.900000000000002">Spring Security / AuthController</tspan><tspan x="397.8415000000001" dy="16.900000000000002">Emisor JWT (RS256 con private.pem)</tspan></text>
+</g>
+<g class="node" data-id="CourierApp" data-label="Spring Boot 3.5
+CourierController
+InternalCourierController (/status)" data-shape="rectangle">
+  <rect x="1145.29475" y="927.9000000000001" width="240.53799999999995" height="70.7" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1265.56375" y="963.2500000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1265.56375" dy="-12.350000000000001">Spring Boot 3.5</tspan><tspan x="1265.56375" dy="16.900000000000002">CourierController</tspan><tspan x="1265.56375" dy="16.900000000000002">InternalCourierController (/status)</tspan></text>
+</g>
+<g class="node" data-id="ShipmentApp" data-label="Spring Boot 3.5
+ShipmentController
+OpenFeign Client" data-shape="rectangle">
+  <rect x="858.6269166666666" y="668.9000000000001" width="154.582" height="70.7" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="935.9179166666665" y="704.2500000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="935.9179166666665" dy="-12.350000000000001">Spring Boot 3.5</tspan><tspan x="935.9179166666665" dy="16.900000000000002">ShipmentController</tspan><tspan x="935.9179166666665" dy="16.900000000000002">OpenFeign Client</tspan></text>
+</g>
+<g class="node" data-id="SecDB" data-label="security_db
+(Esquema JPA / Flyway)" data-shape="cylinder">
+  <rect x="797.8025" y="1278.8000000000002" width="184.22199999999998" height="53.80000000000001" fill="var(--_node-fill)" stroke="none" />
+  <line x1="797.8025" y1="1278.8000000000002" x2="797.8025" y2="1332.6000000000001" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="982.0245" y1="1278.8000000000002" x2="982.0245" y2="1332.6000000000001" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="889.9135" cy="1332.6000000000001" rx="92.11099999999999" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="889.9135" cy="1278.8000000000002" rx="92.11099999999999" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="889.9135" y="1305.7000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="889.9135" dy="-3.9000000000000012">security_db</tspan><tspan x="889.9135" dy="16.900000000000002">(Esquema JPA / Flyway)</tspan></text>
+</g>
+<g class="node" data-id="CourierDB" data-label="courier_db
+(Esquema JPA / Flyway)" data-shape="cylinder">
+  <rect x="1010.0245" y="1278.8000000000002" width="184.22199999999998" height="53.80000000000001" fill="var(--_node-fill)" stroke="none" />
+  <line x1="1010.0245" y1="1278.8000000000002" x2="1010.0245" y2="1332.6000000000001" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="1194.2465" y1="1278.8000000000002" x2="1194.2465" y2="1332.6000000000001" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="1102.1354999999999" cy="1332.6000000000001" rx="92.11099999999999" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="1102.1354999999999" cy="1278.8000000000002" rx="92.11099999999999" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1102.1354999999999" y="1305.7000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1102.1354999999999" dy="-3.9000000000000012">courier_db</tspan><tspan x="1102.1354999999999" dy="16.900000000000002">(Esquema JPA / Flyway)</tspan></text>
+</g>
+<g class="node" data-id="ShipmentDB" data-label="logitrack_db
+(Esquema JPA / Flyway)" data-shape="cylinder">
+  <rect x="580.373" y="1278.8000000000002" width="184.22199999999998" height="53.80000000000001" fill="var(--_node-fill)" stroke="none" />
+  <line x1="580.373" y1="1278.8000000000002" x2="580.373" y2="1332.6000000000001" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="764.595" y1="1278.8000000000002" x2="764.595" y2="1332.6000000000001" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="672.484" cy="1332.6000000000001" rx="92.11099999999999" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="672.484" cy="1278.8000000000002" rx="92.11099999999999" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="672.484" y="1305.7000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="672.484" dy="-3.9000000000000012">logitrack_db</tspan><tspan x="672.484" dy="16.900000000000002">(Esquema JPA / Flyway)</tspan></text>
+</g>
+<g class="node" data-id="MySQLCont" data-label="Contenedor MySQL / PostgreSQL (:3306)" data-shape="rectangle">
+  <rect x="672.2765" y="1186.9" width="283.51599999999996" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="814.0345" y="1205.3500000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Contenedor MySQL / PostgreSQL (:3306)</text>
+</g>
+</svg>
